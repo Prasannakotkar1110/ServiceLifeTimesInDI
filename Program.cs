@@ -16,6 +16,8 @@ builder.Services.AddSingleton<IMySingleTon, MySingleTon>();
 
 builder.Services.AddScoped<IScope, Scope>();
 
+builder.Services.AddTransient<ITransiant, Transiant>();
+
 
 
 var app = builder.Build();
